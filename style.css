@@ -28,6 +28,7 @@ header h1 {
   width: 220px; 
   background: #fff;
   border: 1px solid #ddd;
+  flex: 0 0 220px;
 }
 
 .album img {
@@ -52,4 +53,18 @@ header h1 {
 
 .overlay {
  display: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 32px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  overflow-x: auto;
+  max-width: 940px; /* 4 albums * 220px + 3 gaps * 32px */
+  padding-bottom: 16px; /* for scroll bar space */
+  margin-left: auto;
+  margin-right: auto;
 }
